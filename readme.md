@@ -4,7 +4,7 @@
 CRUD API Exercise
 </p>
 
-## Local Environment
+## Local Development Environment
 Bitnami WAMP Stack 7.1.27 on MS Windows 10
   - PHP 7.1.27
   - Apach 2.4
@@ -14,16 +14,16 @@ Bitnami WAMP Stack 7.1.27 on MS Windows 10
   - API request testing with Postman
 
 ## Development Flow
-1. Forking the Laravel Framework to my personal GitHub accout : #gitlym
+1. Fork the Laravel Framework to my personal GitHub account : #gitlym
 2. Clone them to local project folder
-3. composer update
-4. php artisan migrate
-5. php artisan make:auth
+3. CLI with 'composer update'
+4. CLI with 'php artisan migrate'
+5. CLI with 'php artisan make:auth'
 6. Add first_name and last_name columns in the users table
 7. Add first_name and last_name fillable values in the user model
 8. Add API endpoints to routes : web.php
 9. Create UserController for API request and response methods
-10. commit and pull to my personal GitHub : #gitlym
+10. Commit and push to my personal GitHub : #gitlym
 
 ## API request manual
 1. [GET] /users
@@ -47,3 +47,8 @@ Bitnami WAMP Stack 7.1.27 on MS Windows 10
             'last_name' => ['required', 'string', 'max:50'],
             'password' => ['required', 'string', 'max:50'],
   - Response : update result with request user id
+
+  ## Database structure file
+  laravel.sql
+  or
+  You can simply execute CLI with 'php artisan migrate' to add first_name and last_name to users table
