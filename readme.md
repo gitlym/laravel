@@ -13,8 +13,6 @@ Bitnami WAMP Stack 7.1.27 on MS Windows 10
   - IDE : Visual Studit Code for 
   - API request testing with Postman
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
 ## Development Flow
 1. Forking the Laravel Framework to my personal GitHub accout : #gitlym
 2. Clone them to local project folder
@@ -31,6 +29,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 1. [GET] /users
   - Response : List of the current users in JSON format
 
+
 2. [POST] /users/create
   - Requirement : must have first name, last name and unique email
   - Request Parameters
@@ -39,6 +38,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
             'email' => ['required', 'unique:users,email','string', 'max:255'],
             'password' => ['required', 'string', 'min:8', 'max:50'],
   - Response : stored user data in JSON format
+
 
 3. [POST] /users/update/{id}
   - Requiredment : email can not be updated, at least one field must be changed
